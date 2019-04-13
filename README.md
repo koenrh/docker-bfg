@@ -20,7 +20,7 @@ wrapper functions for your `docker run` commands ([example](https://github.com/j
 ```bash
 bfg() {
   docker run -it --rm \
-    --volume "$PWD:/home/bfg" \
+    --volume "$PWD:/home/bfg/workspace" \
     --name bfg \
     koenrh/bfg "$@"
 }

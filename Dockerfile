@@ -22,7 +22,7 @@ RUN curl "https://repo1.maven.org/maven2/com/madgag/bfg/$BFG_VERSION/bfg-$BFG_VE
   && echo "$BFG_CHECKSUM  bfg-$BFG_VERSION.jar" | sha256sum -c - \
   && mv "bfg-$BFG_VERSION.jar" /home/bfg/bfg.jar
 
-WORKDIR "$HOME"
+WORKDIR "$HOME/workspace"
 USER bfg
 
 ENTRYPOINT ["/home/bfg/entrypoint.sh", "/home/bfg/bfg.jar"]
