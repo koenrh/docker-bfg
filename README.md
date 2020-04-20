@@ -8,7 +8,7 @@ You could run BFG in a container by executing the following `docker` command.
 
 ```bash
 docker run -it --rm \
-  --volume "$PWD:/home/bfg" \
+  --volume "$PWD:/home/bfg/workspace" \
   koenrh/bfg \
   --delete-files id_rsa
 ```
