@@ -1,4 +1,4 @@
-FROM amazoncorretto:15.0.2@sha256:d83dd6b4c2b2228432ae23b90741365db9dc932510b2b7011b61565abf61eda1
+FROM amazoncorretto:16.0.1@sha256:035030cc50a125eb9cfbdbab4107abecc90c7b7bb70f5951ced407ca05567943
 LABEL maintainer "Koen Rouwhorst <info@koenrouwhorst.nl>"
 
 # NOTE: https://rtyley.github.io/bfg-repo-cleaner/
